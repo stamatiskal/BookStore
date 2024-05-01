@@ -34,7 +34,7 @@ export default function BookDetails() {
   if (!selectedBook) {
     return <div>Book not found</div>;
   }
-
+  //setting for the slider
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -153,7 +153,7 @@ export default function BookDetails() {
         >
           Other Books you may like
         </Typography>
-
+        {/* slider goes through a map so i can render the other books and ignore the one that i am showing  */}
         <Slider {...sliderSettings}>
           {bookDetails.books
             .filter((book) => book.isbn !== isbn)
