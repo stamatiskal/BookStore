@@ -21,7 +21,7 @@ export default function Footer() {
           justifyContent="flex-end"
         >
           <Link to="/Library" style={{ textDecoration: "none" }}>
-            <Button variant="container">Home</Button>
+            <Button variant="outlined">Home</Button>
           </Link>
           <Link to="/NewBook" style={{ textDecoration: "none" }}>
             <Button variant="contained">Add your Book</Button>
